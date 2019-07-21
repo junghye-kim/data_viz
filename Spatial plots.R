@@ -102,7 +102,7 @@ NH<-map_data("state",region="New Hampshire")
 
 cities<-us_cities()
 
-register_google(key="AIzaSyCIKgPjGBcPfHBfluZEkM4VEYLyIHp6t7c")
+
 
 VT_cities<-cities %>% filter(state_abbr=="VT") %>% mutate(city_name=paste0(city,",VT"))
 VT_geocode<-VT_cities$city_name %>% geocode()
